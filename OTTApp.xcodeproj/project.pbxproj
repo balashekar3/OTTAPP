@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D032F3D2C5BE8290014DB8F /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D032F3C2C5BE8290014DB8F /* DownloadsView.swift */; };
+		0D0A77292C42791F00AF1E3C /* TopLatestMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A77282C42791F00AF1E3C /* TopLatestMoviePreview.swift */; };
+		0D0A772B2C4287B700AF1E3C /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A772A2C4287B700AF1E3C /* SmallVerticalButton.swift */; };
+		0D0A772D2C42963400AF1E3C /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A772C2C42963400AF1E3C /* PlayButton.swift */; };
+		0D2AB3952C4F6A7A005AF733 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AB3942C4F6A7A005AF733 /* Trailer.swift */; };
+		0D2AB3972C4F6DDD005AF733 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AB3962C4F6DDD005AF733 /* VideoView.swift */; };
+		0D2AB3992C4F8CD7005AF733 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AB3982C4F8CD7005AF733 /* VideoPreviewImage.swift */; };
+		0D2AB39B2C4F8F4C005AF733 /* TrailerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AB39A2C4F8F4C005AF733 /* TrailerListView.swift */; };
+		0D2E06372C58A75500912E5C /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E06362C58A75500912E5C /* EpisodesView.swift */; };
+		0D3F269D2C3E8EF0004C0247 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F269C2C3E8EF0004C0247 /* HomeView.swift */; };
+		0D3F26A02C3E940F004C0247 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0D3F269F2C3E940F004C0247 /* Kingfisher */; };
+		0D3F26A52C3E9B50004C0247 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F26A42C3E9B50004C0247 /* HomeVM.swift */; };
+		0D3F26A72C3EA73D004C0247 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F26A62C3EA73D004C0247 /* Movie.swift */; };
+		0D3F26A92C3EA81E004C0247 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F26A82C3EA81E004C0247 /* StandardHomeMovie.swift */; };
+		0D3F26AB2C3EA87B004C0247 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F26AA2C3EA87B004C0247 /* GlobalHelpers.swift */; };
+		0D4449742C5A564500146A62 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4449732C5A564500146A62 /* MainContentView.swift */; };
+		0D4449772C5A5C5800146A62 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4449762C5A5C5800146A62 /* SearchBar.swift */; };
+		0D44497A2C5A6FD700146A62 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4449792C5A6FD700146A62 /* Color+Extensions.swift */; };
+		0D44497C2C5A7E9400146A62 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44497B2C5A7E9400146A62 /* ActivityIndicator.swift */; };
+		0D46DFAB2C3D7A94006D736D /* OTTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFAA2C3D7A94006D736D /* OTTAppApp.swift */; };
+		0D46DFAD2C3D7A94006D736D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFAC2C3D7A94006D736D /* ContentView.swift */; };
+		0D46DFAF2C3D7A99006D736D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D46DFAE2C3D7A99006D736D /* Assets.xcassets */; };
+		0D46DFB22C3D7A99006D736D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D46DFB12C3D7A99006D736D /* Preview Assets.xcassets */; };
+		0D46DFB42C3D7A99006D736D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFB32C3D7A99006D736D /* Persistence.swift */; };
+		0D46DFB72C3D7A99006D736D /* OTTApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFB52C3D7A99006D736D /* OTTApp.xcdatamodeld */; };
+		0D46DFC12C3D7A9A006D736D /* OTTAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFC02C3D7A9A006D736D /* OTTAppTests.swift */; };
+		0D46DFCB2C3D7A9A006D736D /* OTTAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFCA2C3D7A9A006D736D /* OTTAppUITests.swift */; };
+		0D46DFCD2C3D7A9A006D736D /* OTTAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46DFCC2C3D7A9A006D736D /* OTTAppUITestsLaunchTests.swift */; };
+		0D506E092C4AD030006F5A6D /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D506E082C4AD030006F5A6D /* CustomTabSwitcher.swift */; };
+		0D506E0C2C4AE159006F5A6D /* MoreLikeThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D506E0B2C4AE159006F5A6D /* MoreLikeThisView.swift */; };
+		0D70ABEC2C5B55EB00BFE875 /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABEB2C5B55EB00BFE875 /* PopularMovieView.swift */; };
+		0D70ABEE2C5B629900BFE875 /* SearchResultGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABED2C5B629900BFE875 /* SearchResultGridView.swift */; };
+		0D70ABF12C5B85DE00BFE875 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABF02C5B85DE00BFE875 /* ComingSoonView.swift */; };
+		0D70ABF32C5B864600BFE875 /* NotificationBarVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABF22C5B864600BFE875 /* NotificationBarVIew.swift */; };
+		0D70ABF52C5BB57700BFE875 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABF42C5BB57700BFE875 /* ComingSoonRow.swift */; };
+		0D70ABF72C5BC83100BFE875 /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABF62C5BC83100BFE875 /* ComingSoonVM.swift */; };
+		0D70ABF92C5BCD4A00BFE875 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70ABF82C5BCD4A00BFE875 /* TrackableScrollView.swift */; };
+		0D7B0B292C5A2E93003AEEF7 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B0B282C5A2E93003AEEF7 /* HomeStack.swift */; };
+		0D9761852C5AA94F00B73480 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9761842C5AA94F00B73480 /* SearchView.swift */; };
+		0D9761872C5AAA0B00B73480 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9761862C5AAA0B00B73480 /* SearchVM.swift */; };
+		0DB068572C483BD2007AAC93 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB068562C483BD2007AAC93 /* MovieDetailsView.swift */; };
+		0DDA96212C5B424A002451C9 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA96202C5B424A002451C9 /* GenerateMovies.swift */; };
+		0DE1C5842C490E0C000DC2F2 /* Episods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1C5832C490E0C000DC2F2 /* Episods.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D46DFBD2C3D7A9A006D736D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D46DF9F2C3D7A94006D736D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D46DFA62C3D7A94006D736D;
+			remoteInfo = OTTApp;
+		};
+		0D46DFC72C3D7A9A006D736D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D46DF9F2C3D7A94006D736D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D46DFA62C3D7A94006D736D;
+			remoteInfo = OTTApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D032F3C2C5BE8290014DB8F /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		0D0A77282C42791F00AF1E3C /* TopLatestMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLatestMoviePreview.swift; sourceTree = "<group>"; };
+		0D0A772A2C4287B700AF1E3C /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		0D0A772C2C42963400AF1E3C /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		0D2AB3942C4F6A7A005AF733 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		0D2AB3962C4F6DDD005AF733 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		0D2AB3982C4F8CD7005AF733 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
+		0D2AB39A2C4F8F4C005AF733 /* TrailerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerListView.swift; sourceTree = "<group>"; };
+		0D2E06362C58A75500912E5C /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		0D3F269C2C3E8EF0004C0247 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0D3F26A42C3E9B50004C0247 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		0D3F26A62C3EA73D004C0247 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0D3F26A82C3EA81E004C0247 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		0D3F26AA2C3EA87B004C0247 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		0D4449732C5A564500146A62 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		0D4449762C5A5C5800146A62 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0D4449792C5A6FD700146A62 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0D44497B2C5A7E9400146A62 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0D46DFA72C3D7A94006D736D /* OTTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D46DFAA2C3D7A94006D736D /* OTTAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTTAppApp.swift; sourceTree = "<group>"; };
+		0D46DFAC2C3D7A94006D736D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D46DFAE2C3D7A99006D736D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D46DFB12C3D7A99006D736D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D46DFB32C3D7A99006D736D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0D46DFB62C3D7A99006D736D /* OTTApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OTTApp.xcdatamodel; sourceTree = "<group>"; };
+		0D46DFBC2C3D7A9A006D736D /* OTTAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTTAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D46DFC02C3D7A9A006D736D /* OTTAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTTAppTests.swift; sourceTree = "<group>"; };
+		0D46DFC62C3D7A9A006D736D /* OTTAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTTAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D46DFCA2C3D7A9A006D736D /* OTTAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTTAppUITests.swift; sourceTree = "<group>"; };
+		0D46DFCC2C3D7A9A006D736D /* OTTAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTTAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D506E082C4AD030006F5A6D /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		0D506E0B2C4AE159006F5A6D /* MoreLikeThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThisView.swift; sourceTree = "<group>"; };
+		0D70ABEB2C5B55EB00BFE875 /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		0D70ABED2C5B629900BFE875 /* SearchResultGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultGridView.swift; sourceTree = "<group>"; };
+		0D70ABF02C5B85DE00BFE875 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
+		0D70ABF22C5B864600BFE875 /* NotificationBarVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBarVIew.swift; sourceTree = "<group>"; };
+		0D70ABF42C5BB57700BFE875 /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		0D70ABF62C5BC83100BFE875 /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
+		0D70ABF82C5BCD4A00BFE875 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		0D7B0B282C5A2E93003AEEF7 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		0D9761842C5AA94F00B73480 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0D9761862C5AAA0B00B73480 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		0DB068562C483BD2007AAC93 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		0DDA96202C5B424A002451C9 /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
+		0DE1C5832C490E0C000DC2F2 /* Episods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episods.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D46DFA42C3D7A94006D736D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F26A02C3E940F004C0247 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFB92C3D7A9A006D736D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFC32C3D7A9A006D736D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D032F3B2C5BE7D80014DB8F /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				0D032F3C2C5BE8290014DB8F /* DownloadsView.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		0D2AB3912C4F69F0005AF733 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DB068562C483BD2007AAC93 /* MovieDetailsView.swift */,
+				0D506E082C4AD030006F5A6D /* CustomTabSwitcher.swift */,
+				0D506E0B2C4AE159006F5A6D /* MoreLikeThisView.swift */,
+				0D2AB3962C4F6DDD005AF733 /* VideoView.swift */,
+				0D2AB3982C4F8CD7005AF733 /* VideoPreviewImage.swift */,
+				0D2AB39A2C4F8F4C005AF733 /* TrailerListView.swift */,
+				0D2E06362C58A75500912E5C /* EpisodesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D2AB3922C4F6A07005AF733 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D2AB3932C4F6A5A005AF733 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AB3942C4F6A7A005AF733 /* Trailer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D3F26A12C3E9B05004C0247 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DB068532C483B40007AAC93 /* HomeViews */,
+				0DB068522C483B18007AAC93 /* ViewModel */,
+				0DB068502C483ADE007AAC93 /* Model */,
+				0DB068512C483AF1007AAC93 /* Helpers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0D4449752C5A5C4700146A62 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0D4449762C5A5C5800146A62 /* SearchBar.swift */,
+				0D9761842C5AA94F00B73480 /* SearchView.swift */,
+				0D9761862C5AAA0B00B73480 /* SearchVM.swift */,
+				0DDA96202C5B424A002451C9 /* GenerateMovies.swift */,
+				0D70ABEB2C5B55EB00BFE875 /* PopularMovieView.swift */,
+				0D70ABED2C5B629900BFE875 /* SearchResultGridView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0D4449782C5A6FB800146A62 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D4449792C5A6FD700146A62 /* Color+Extensions.swift */,
+				0D44497B2C5A7E9400146A62 /* ActivityIndicator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0D46DF9E2C3D7A94006D736D = {
+			isa = PBXGroup;
+			children = (
+				0D46DFA92C3D7A94006D736D /* OTTApp */,
+				0D46DFBF2C3D7A9A006D736D /* OTTAppTests */,
+				0D46DFC92C3D7A9A006D736D /* OTTAppUITests */,
+				0D46DFA82C3D7A94006D736D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D46DFA82C3D7A94006D736D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFA72C3D7A94006D736D /* OTTApp.app */,
+				0D46DFBC2C3D7A9A006D736D /* OTTAppTests.xctest */,
+				0D46DFC62C3D7A9A006D736D /* OTTAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D46DFA92C3D7A94006D736D /* OTTApp */ = {
+			isa = PBXGroup;
+			children = (
+				0D4449782C5A6FB800146A62 /* Helpers */,
+				0D653E2F2C3D7EFA001330AD /* Shared */,
+				0D653E312C3D7F23001330AD /* IOS */,
+				0D653E302C3D7F1A001330AD /* CoreData */,
+				0D46DFB02C3D7A99006D736D /* Preview Content */,
+			);
+			path = OTTApp;
+			sourceTree = "<group>";
+		};
+		0D46DFB02C3D7A99006D736D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFB12C3D7A99006D736D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D46DFBF2C3D7A9A006D736D /* OTTAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFC02C3D7A9A006D736D /* OTTAppTests.swift */,
+			);
+			path = OTTAppTests;
+			sourceTree = "<group>";
+		};
+		0D46DFC92C3D7A9A006D736D /* OTTAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFCA2C3D7A9A006D736D /* OTTAppUITests.swift */,
+				0D46DFCC2C3D7A9A006D736D /* OTTAppUITestsLaunchTests.swift */,
+			);
+			path = OTTAppUITests;
+			sourceTree = "<group>";
+		};
+		0D506E0A2C4AE12B006F5A6D /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AB3932C4F6A5A005AF733 /* Model */,
+				0D2AB3922C4F6A07005AF733 /* ViewModel */,
+				0D2AB3912C4F69F0005AF733 /* Views */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		0D653E2F2C3D7EFA001330AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFAC2C3D7A94006D736D /* ContentView.swift */,
+				0D46DFAA2C3D7A94006D736D /* OTTAppApp.swift */,
+				0D46DFAE2C3D7A99006D736D /* Assets.xcassets */,
+				0D4449732C5A564500146A62 /* MainContentView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0D653E302C3D7F1A001330AD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0D46DFB32C3D7A99006D736D /* Persistence.swift */,
+				0D46DFB52C3D7A99006D736D /* OTTApp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0D653E312C3D7F23001330AD /* IOS */ = {
+			isa = PBXGroup;
+			children = (
+				0D032F3B2C5BE7D80014DB8F /* Downloads */,
+				0D70ABEF2C5B85B900BFE875 /* Features */,
+				0D4449752C5A5C4700146A62 /* Search */,
+				0D3F26A12C3E9B05004C0247 /* Home */,
+				0D506E0A2C4AE12B006F5A6D /* MovieDetails */,
+			);
+			path = IOS;
+			sourceTree = "<group>";
+		};
+		0D70ABEF2C5B85B900BFE875 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0D70ABF02C5B85DE00BFE875 /* ComingSoonView.swift */,
+				0D70ABF22C5B864600BFE875 /* NotificationBarVIew.swift */,
+				0D70ABF42C5BB57700BFE875 /* ComingSoonRow.swift */,
+				0D70ABF62C5BC83100BFE875 /* ComingSoonVM.swift */,
+				0D70ABF82C5BCD4A00BFE875 /* TrackableScrollView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0DB068502C483ADE007AAC93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F26A62C3EA73D004C0247 /* Movie.swift */,
+				0DE1C5832C490E0C000DC2F2 /* Episods.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DB068512C483AF1007AAC93 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F26AA2C3EA87B004C0247 /* GlobalHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0DB068522C483B18007AAC93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F26A42C3E9B50004C0247 /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DB068532C483B40007AAC93 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F269C2C3E8EF0004C0247 /* HomeView.swift */,
+				0D3F26A82C3EA81E004C0247 /* StandardHomeMovie.swift */,
+				0D0A77282C42791F00AF1E3C /* TopLatestMoviePreview.swift */,
+				0D0A772A2C4287B700AF1E3C /* SmallVerticalButton.swift */,
+				0D0A772C2C42963400AF1E3C /* PlayButton.swift */,
+				0D7B0B282C5A2E93003AEEF7 /* HomeStack.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D46DFA62C3D7A94006D736D /* OTTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D46DFD02C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTApp" */;
+			buildPhases = (
+				0D46DFA32C3D7A94006D736D /* Sources */,
+				0D46DFA42C3D7A94006D736D /* Frameworks */,
+				0D46DFA52C3D7A94006D736D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTTApp;
+			packageProductDependencies = (
+				0D3F269F2C3E940F004C0247 /* Kingfisher */,
+			);
+			productName = OTTApp;
+			productReference = 0D46DFA72C3D7A94006D736D /* OTTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D46DFBB2C3D7A9A006D736D /* OTTAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D46DFD32C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTAppTests" */;
+			buildPhases = (
+				0D46DFB82C3D7A9A006D736D /* Sources */,
+				0D46DFB92C3D7A9A006D736D /* Frameworks */,
+				0D46DFBA2C3D7A9A006D736D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D46DFBE2C3D7A9A006D736D /* PBXTargetDependency */,
+			);
+			name = OTTAppTests;
+			productName = OTTAppTests;
+			productReference = 0D46DFBC2C3D7A9A006D736D /* OTTAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D46DFC52C3D7A9A006D736D /* OTTAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D46DFD62C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTAppUITests" */;
+			buildPhases = (
+				0D46DFC22C3D7A9A006D736D /* Sources */,
+				0D46DFC32C3D7A9A006D736D /* Frameworks */,
+				0D46DFC42C3D7A9A006D736D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D46DFC82C3D7A9A006D736D /* PBXTargetDependency */,
+			);
+			name = OTTAppUITests;
+			productName = OTTAppUITests;
+			productReference = 0D46DFC62C3D7A9A006D736D /* OTTAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D46DF9F2C3D7A94006D736D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0D46DFA62C3D7A94006D736D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0D46DFBB2C3D7A9A006D736D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0D46DFA62C3D7A94006D736D;
+					};
+					0D46DFC52C3D7A9A006D736D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0D46DFA62C3D7A94006D736D;
+					};
+				};
+			};
+			buildConfigurationList = 0D46DFA22C3D7A94006D736D /* Build configuration list for PBXProject "OTTApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D46DF9E2C3D7A94006D736D;
+			packageReferences = (
+				0D3F269E2C3E940F004C0247 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 0D46DFA82C3D7A94006D736D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D46DFA62C3D7A94006D736D /* OTTApp */,
+				0D46DFBB2C3D7A9A006D736D /* OTTAppTests */,
+				0D46DFC52C3D7A9A006D736D /* OTTAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D46DFA52C3D7A94006D736D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D46DFB22C3D7A99006D736D /* Preview Assets.xcassets in Resources */,
+				0D46DFAF2C3D7A99006D736D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFBA2C3D7A9A006D736D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFC42C3D7A9A006D736D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D46DFA32C3D7A94006D736D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0A77292C42791F00AF1E3C /* TopLatestMoviePreview.swift in Sources */,
+				0D3F26AB2C3EA87B004C0247 /* GlobalHelpers.swift in Sources */,
+				0D70ABF52C5BB57700BFE875 /* ComingSoonRow.swift in Sources */,
+				0D506E092C4AD030006F5A6D /* CustomTabSwitcher.swift in Sources */,
+				0D3F26A72C3EA73D004C0247 /* Movie.swift in Sources */,
+				0D44497C2C5A7E9400146A62 /* ActivityIndicator.swift in Sources */,
+				0D46DFB42C3D7A99006D736D /* Persistence.swift in Sources */,
+				0D70ABF12C5B85DE00BFE875 /* ComingSoonView.swift in Sources */,
+				0D44497A2C5A6FD700146A62 /* Color+Extensions.swift in Sources */,
+				0D4449772C5A5C5800146A62 /* SearchBar.swift in Sources */,
+				0D0A772D2C42963400AF1E3C /* PlayButton.swift in Sources */,
+				0D2E06372C58A75500912E5C /* EpisodesView.swift in Sources */,
+				0D032F3D2C5BE8290014DB8F /* DownloadsView.swift in Sources */,
+				0D70ABF32C5B864600BFE875 /* NotificationBarVIew.swift in Sources */,
+				0DDA96212C5B424A002451C9 /* GenerateMovies.swift in Sources */,
+				0D2AB3972C4F6DDD005AF733 /* VideoView.swift in Sources */,
+				0D2AB3992C4F8CD7005AF733 /* VideoPreviewImage.swift in Sources */,
+				0DB068572C483BD2007AAC93 /* MovieDetailsView.swift in Sources */,
+				0D46DFAD2C3D7A94006D736D /* ContentView.swift in Sources */,
+				0D46DFAB2C3D7A94006D736D /* OTTAppApp.swift in Sources */,
+				0D70ABEE2C5B629900BFE875 /* SearchResultGridView.swift in Sources */,
+				0D3F26A92C3EA81E004C0247 /* StandardHomeMovie.swift in Sources */,
+				0DE1C5842C490E0C000DC2F2 /* Episods.swift in Sources */,
+				0D0A772B2C4287B700AF1E3C /* SmallVerticalButton.swift in Sources */,
+				0D506E0C2C4AE159006F5A6D /* MoreLikeThisView.swift in Sources */,
+				0D9761852C5AA94F00B73480 /* SearchView.swift in Sources */,
+				0D3F26A52C3E9B50004C0247 /* HomeVM.swift in Sources */,
+				0D4449742C5A564500146A62 /* MainContentView.swift in Sources */,
+				0D70ABF92C5BCD4A00BFE875 /* TrackableScrollView.swift in Sources */,
+				0D2AB3952C4F6A7A005AF733 /* Trailer.swift in Sources */,
+				0D3F269D2C3E8EF0004C0247 /* HomeView.swift in Sources */,
+				0D7B0B292C5A2E93003AEEF7 /* HomeStack.swift in Sources */,
+				0D2AB39B2C4F8F4C005AF733 /* TrailerListView.swift in Sources */,
+				0D70ABF72C5BC83100BFE875 /* ComingSoonVM.swift in Sources */,
+				0D70ABEC2C5B55EB00BFE875 /* PopularMovieView.swift in Sources */,
+				0D9761872C5AAA0B00B73480 /* SearchVM.swift in Sources */,
+				0D46DFB72C3D7A99006D736D /* OTTApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFB82C3D7A9A006D736D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D46DFC12C3D7A9A006D736D /* OTTAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D46DFC22C3D7A9A006D736D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D46DFCD2C3D7A9A006D736D /* OTTAppUITestsLaunchTests.swift in Sources */,
+				0D46DFCB2C3D7A9A006D736D /* OTTAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D46DFBE2C3D7A9A006D736D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D46DFA62C3D7A94006D736D /* OTTApp */;
+			targetProxy = 0D46DFBD2C3D7A9A006D736D /* PBXContainerItemProxy */;
+		};
+		0D46DFC82C3D7A9A006D736D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D46DFA62C3D7A94006D736D /* OTTApp */;
+			targetProxy = 0D46DFC72C3D7A9A006D736D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D46DFCE2C3D7A9A006D736D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D46DFCF2C3D7A9A006D736D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D46DFD12C3D7A9A006D736D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OTTApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D46DFD22C3D7A9A006D736D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OTTApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D46DFD42C3D7A9A006D736D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTTApp";
+			};
+			name = Debug;
+		};
+		0D46DFD52C3D7A9A006D736D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTTApp";
+			};
+			name = Release;
+		};
+		0D46DFD72C3D7A9A006D736D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTTApp;
+			};
+			name = Debug;
+		};
+		0D46DFD82C3D7A9A006D736D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bala.OTTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTTApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D46DFA22C3D7A94006D736D /* Build configuration list for PBXProject "OTTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D46DFCE2C3D7A9A006D736D /* Debug */,
+				0D46DFCF2C3D7A9A006D736D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D46DFD02C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D46DFD12C3D7A9A006D736D /* Debug */,
+				0D46DFD22C3D7A9A006D736D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D46DFD32C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D46DFD42C3D7A9A006D736D /* Debug */,
+				0D46DFD52C3D7A9A006D736D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D46DFD62C3D7A9A006D736D /* Build configuration list for PBXNativeTarget "OTTAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D46DFD72C3D7A9A006D736D /* Debug */,
+				0D46DFD82C3D7A9A006D736D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D3F269E2C3E940F004C0247 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D3F269F2C3E940F004C0247 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D3F269E2C3E940F004C0247 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0D46DFB52C3D7A99006D736D /* OTTApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D46DFB62C3D7A99006D736D /* OTTApp.xcdatamodel */,
+			);
+			currentVersion = 0D46DFB62C3D7A99006D736D /* OTTApp.xcdatamodel */;
+			path = OTTApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D46DF9F2C3D7A94006D736D /* Project object */;
+}
