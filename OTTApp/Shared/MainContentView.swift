@@ -74,6 +74,7 @@ struct MainContentView: View {
                 }
                 previewHorizontalDragActive = false
             }
+        //TabView
       return ZStack{
             TabView{
                 HomeView(showPreviewFullScreen: $showPreviewFullScreen, previewStartingIndex: $previewStartingIndex)
