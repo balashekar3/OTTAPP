@@ -27,7 +27,7 @@ func generateMovies(_ count: Int) -> [Movie] {
         let creators = "felis non, libero consectetur"
         let categories = ["consectetur", "neque", "felis", "libero"]
         
-        let headline = "Watch now!"
+        //let headline = "Watch now!"
         
         let numSeasons = Int.random(in: 1...3)
         
@@ -48,7 +48,7 @@ func generateMovies(_ count: Int) -> [Movie] {
         
         let moreLikeThis = exampleMovies
         
-        let movie = Movie(id:id,name: name, thumbnailURL:thumbnail , categories: categories, year: year, rating: "PG-13", defaultCurrentEpisodeInfo: defEpiInfo, creator: creators, cast: cast, moreLikeThisMovies: moreLikeThis, trailers: allTrailers)
+        let movie = Movie(id:id,name: name, thumbnailURL:thumbnail , categories: categories, year: year, rating: "PG-13", defaultCurrentEpisodeInfo: defEpiInfo, creator: creators, cast: cast, moreLikeThisMovies: moreLikeThis, trailers: allTrailers,previewImage: "")
         
         //let movie = Movie(id: id, name: name, thumbnailURL: thumbnail, categories: categories, genre: .AllGenres, year: year, rating: "PG-13", numberOfSeasons: numSeasons, currentEpisode: defEpiInfo, defaultEpisodeInfo: defEpiInfo, creators: creators, cast: cast, moreLikeThisMovies: moreLikeThis, episodes: allEpisodes, promotionHeadline: headline, trailers: allTrailers)
         allMovies.append(movie)

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Movie:Identifiable{
     var id:String = UUID().uuidString
@@ -29,8 +30,10 @@ struct Movie:Identifiable{
     var cast:String
     var moreLikeThisMovies:[Movie]
     var trailers:[Trailer]
+    var previewImage:String
+    var previewVideoURl:URL?
+    var accentColor:Color = .white
 
-    
     var numberOfSeassonsDisplay:String{
         if let num = numberOfSeassons{
             if num == 1{

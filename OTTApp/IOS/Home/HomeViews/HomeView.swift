@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var vm = HomeVM()
+   @ObservedObject var vm = HomeVM()
     var screen = UIScreen.main.bounds
     @State private var movieDetailToShow:Movie? = nil
     @State private var animationAmount = 1.0
@@ -17,6 +17,10 @@ struct HomeView: View {
     @State private var showGenreSelection = false
     @State private var showTopBarSelection = false
     
+    @Binding var showPreviewFullScreen : Bool
+    @Binding var previewStartingIndex : Int
+
+
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
@@ -28,8 +32,9 @@ struct HomeView: View {
                         .frame(width: screen.width)
                         .padding(.top,-120)
                         .zIndex(-1)
+                    MoviePreviewRow(movies: exampleMovies,showPreviewFullScreen:$showPreviewFullScreen,previewStartingIndex:$previewStartingIndex)
                     //TopLatestMoviePreview -End
-                    HomeStack(vm: vm, movieDetailToShow: $movieDetailToShow,topRowSelection:topRowSelection,selectedGenre:homeGenreType)
+                    HomeStack(vm: vm, movieDetailToShow: $movieDetailToShow,topRowSelection:topRowSelection,selectedGenre:homeGenreType,showPreviewFullScreen:$showPreviewFullScreen,previewStartingIndex:$previewStartingIndex)
                 }//MainLazyVStack
             }//MainScrollView
             if movieDetailToShow != nil {
@@ -109,7 +114,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(showPreviewFullScreen: .constant(false), previewStartingIndex: .constant(0))
     }
 }
 

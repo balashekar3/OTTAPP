@@ -13,7 +13,9 @@ struct HomeStack:View{
     @Binding var movieDetailToShow:Movie?
     var topRowSelection:HomeTopRow
     var selectedGenre:HomeGenre
-
+    @Binding var showPreviewFullScreen : Bool
+    @Binding var previewStartingIndex : Int
+    
     var body:some View{
         ForEach(vm.allCatageries,id: \.self){ catogory in
             VStack {
@@ -43,7 +45,7 @@ struct HomeStack_Previews: PreviewProvider {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
             ScrollView{
-                HomeStack(vm: HomeVM(), movieDetailToShow: .constant(nil), topRowSelection: .home, selectedGenre: .AllGenres)
+                HomeStack(vm: HomeVM(), movieDetailToShow: .constant(nil), topRowSelection: .home, selectedGenre: .AllGenres,showPreviewFullScreen: .constant(false),previewStartingIndex: .constant(0))
             }.foregroundColor(.white)
         }
     }

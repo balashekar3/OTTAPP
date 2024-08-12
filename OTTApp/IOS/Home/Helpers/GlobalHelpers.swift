@@ -36,7 +36,11 @@ let exampleMovie1 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies:  [exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies:  [exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "arrestedDevPreview",
+                          previewVideoURl: exampleVideoURL,
+                          accentColor: Color.blue)
 let exampleMovie2 = Movie(id:UUID().uuidString,
                           name: "Traveler",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
@@ -47,7 +51,10 @@ let exampleMovie2 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "darkPreview",
+                          previewVideoURl: exampleVideoURL)
 let exampleMovie3 = Movie(id:UUID().uuidString,
                           name: "Community",
                           thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
@@ -58,7 +65,10 @@ let exampleMovie3 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "dirtyJohnPreview",
+                          previewVideoURl: exampleVideoURL)
 let exampleMovie4 = Movie(id:UUID().uuidString,name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
                           categories: ["Distopian","Exciting","Suspanceful","Sci-Fi TV"],
@@ -68,8 +78,10 @@ let exampleMovie4 = Movie(id:UUID().uuidString,name: "Alone",
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
-
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "dirtyJohnPreview",
+                          previewVideoURl: exampleVideoURL)
 let exampleMovie5 = Movie(id:UUID().uuidString,
                           name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
@@ -80,7 +92,10 @@ let exampleMovie5 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "arrestedDevPreview",
+                          previewVideoURl: exampleVideoURL)
 let exampleMovie6 = Movie(id:UUID().uuidString,
                           name: "After life",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
@@ -92,7 +107,10 @@ let exampleMovie6 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "darkPreview",
+                          previewVideoURl: exampleVideoURL)
 let exampleMovie7 = Movie(id:UUID().uuidString,
                           name: "After life",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
@@ -104,10 +122,15 @@ let exampleMovie7 = Movie(id:UUID().uuidString,
                           defaultCurrentEpisodeInfo: exampleEpisodeInfo1,
                           creator: "gurmeet singh, Mihir Desai, Karan Anshuman",
                           cast: "Ali Fazal, Vikrant Massey, Pankaj Tripathi",
-                          moreLikeThisMovies: [], trailers: exampleMovieTrailers)
+                          moreLikeThisMovies: [],
+                          trailers: exampleMovieTrailers,
+                          previewImage: "dirtyJohnPreview",
+                          previewVideoURl: exampleVideoURL)
 
+var exampleMovies : [Movie] {
+  return  [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6]
+}
 
-var exampleMovies : [Movie] { [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6].shuffled() }
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Mirzapur",
                                              decription: "The iron-fisted Akhandanand Tripathi is a millionaire carpet exporter and the mafia don of Mirzapur. His son, Munna, is an unworthy, power hungry heir who will stop at nothing to inherit his father’s legacy. An incident at a wedding procession forces him to cross paths with Ramakant Pandit, an upstanding lawyer, and his sons, Guddu and Bablu.",
                                              season: 1,
@@ -176,5 +199,34 @@ extension String{
 extension View{
     func hideKeyboard(){
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+extension View {
+    
+    /// Hide or show the view based on a boolean value.
+    ///
+    /// Example for visibility:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true)
+    /// ```
+    ///
+    /// Example for complete removal:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true, remove: true)
+    /// ```
+    ///
+    /// - Parameters:
+    ///   - hidden: Set to `false` to show the view. Set to `true` to hide the view.
+    ///   - remove: Boolean value indicating whether or not to remove the view.
+    @ViewBuilder func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+        if hidden {
+            if !remove {
+                self.hidden()
+            }
+        } else {
+            self
+        }
     }
 }
